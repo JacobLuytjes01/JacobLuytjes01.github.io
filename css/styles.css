@@ -7,7 +7,6 @@ body {
     color: lightsalmon;
     background-image: linear-gradient(midnightblue, darkslateblue)
 }
-
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,13 +50,18 @@ a:hover {
     text-decoration: underline;
 }
 .proj {
-    display: flex;
-    flex: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
     justify-content: space-between;
 }
 .rest {
     display: grid;
     grid-template-columns: 1fr;
+    line-height: 1.6rem;
+}
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .boxes {
     border: 1px solid lightsalmon;
@@ -68,11 +72,19 @@ button {
     background-color: lightsalmon;
     padding: 3px 10px;
 }
-@media only screen and (max-width: 700px) {
-    body {
-        font-size: 17px;
-    }
-    .foot {
+@media only screen and (max-width: 800px) {
+    .foot, .head {
         flex-direction: column;
+        line-height: 2rem;
     }
+}
+.large {
+    grid-column: span 2;
+}
+.view {
+    grid-row: span 2;
+}
+.image {
+    width: 50%;
+    padding: 10px;
 }
