@@ -3,7 +3,6 @@ body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    /*background: midnightblue;*/
     color: lightsalmon;
     background-image: linear-gradient(midnightblue, darkslateblue)
 }
@@ -51,7 +50,7 @@ a:hover {
 }
 .proj {
     display: grid;
-    grid-template-columns: 10fr 1fr;
+    grid-template-columns: 9.3fr 1fr;
     justify-content: space-between;
 }
 .rest {
@@ -87,4 +86,10 @@ button {
 .image {
     width: 50%;
     padding: 10px;
+}
+.right {
+    text-align: right;
+}
+.right2 {
+    float: right;
 }
