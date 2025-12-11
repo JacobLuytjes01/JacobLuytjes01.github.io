@@ -66,6 +66,7 @@ a:hover {
     border: 1px solid lightsalmon;
     margin: 1rem;
     padding: 5px 10px;
+    align-content: space-between;
 }
 button {
     background-color: lightsalmon;
@@ -75,6 +76,9 @@ button {
     .foot, .head {
         flex-direction: column;
         line-height: 2rem;
+    }
+    .boxes {
+        grid-column: span 2;
     }
 }
 .large {
@@ -92,4 +96,9 @@ button {
 }
 .right2 {
     float: right;
+    margin: 0 0 0 10px;
+}
+ul {
+    margin: 2px;
+    padding: 0 20px;
 }
