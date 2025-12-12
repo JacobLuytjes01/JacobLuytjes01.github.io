@@ -64,6 +64,7 @@ a:hover {
 }
 .boxes {
     border: 1px solid lightsalmon;
+    background-color: rgba(0, 0, 0, 0.1);
     margin: 1rem;
     padding: 5px 10px;
     align-content: space-between;
@@ -78,6 +79,9 @@ button {
         line-height: 2rem;
     }
     .boxes {
+        grid-column: span 2;
+    }
+    .title {
         grid-column: span 2;
     }
 }
