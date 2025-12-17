@@ -3,7 +3,7 @@ body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    color: lightsalmon;
+    color: #ffAf6f;
     background-image: linear-gradient(midnightblue, darkslateblue)
 }
 main {
@@ -105,4 +105,7 @@ button {
 ul {
     margin: 2px;
     padding: 0 20px;
+}
+h3 {
+    margin: 0;
 }
