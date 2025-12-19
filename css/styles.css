@@ -3,8 +3,34 @@ body {
     font-family: monospace;
     margin: 0;
     padding: 0;
-    color: #ffAf6f;
-    background-image: linear-gradient(midnightblue, darkslateblue)
+    color: lightgrey;
+    background-image: linear-gradient(#090950, #281D4B);
+}
+.light {
+    color: black;
+    background-image: linear-gradient(whitesmoke, lightgrey);
+    header {
+        background-color: steelblue;
+    }
+    .foot {
+        background-color: cadetblue;
+        p, h2, div {
+            padding: 2px 5px;
+        }
+    }
+}
+.dark {
+    color: lightgrey;
+    background-image: linear-gradient(#090950, #281D4B);
+    header {
+        background-color: #281D4B;
+    }
+    .foot {
+        background-color: #090950;
+        p, h2, div {
+            padding: 2px 5px;
+        }
+    }
 }
 main {
     display: grid;
@@ -16,11 +42,13 @@ main {
     padding: 1rem;
     margin: 1rem;
 }
-.head {
-    background-color: darkslateblue;
+header {
+    p {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .foot {
-    background-color: midnightblue;
     p, h2, div {
         padding: 2px 5px;
     }
@@ -63,20 +91,19 @@ a:hover {
     grid-template-columns: 1fr 1fr;
 }
 .boxes {
-    border: 1px solid lightsalmon;
-    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid lightgrey;
+    background-color: rgba(100, 100, 100, 0.1);
     margin: 1rem;
     padding: 5px 10px;
-    align-content: space-between;
+    border-radius: 10px;
 }
-button {
-    background-color: lightsalmon;
-    padding: 3px 10px;
-}
-@media only screen and (max-width: 800px) {
-    .foot, .head {
+@media only screen and (max-width: 900px) {
+    .foot, header {
         flex-direction: column;
         line-height: 2rem;
+        p {
+            display: block;
+        }
     }
     .boxes {
         grid-column: span 2;
