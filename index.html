@@ -4,36 +4,20 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel='stylesheet' href="css/styles.css">
-    <script>
-        let mode = 'd';
-        function ChangeMode() {
-            if (mode === 'd') {
-                document.body.className = "light";
-                mode = 'l';
-                document.getElementById("btn").innerText = "Dark Mode";
-            }
-            else {
-                document.body.className = "dark";
-                mode = 'd';
-                document.getElementById("btn").innerText = "Light Mode";
-            }
-        }
-    </script>
 </head>
-<body class="dark">
+<body>
 <header class="base">
-    <span>Aspiring Software Engineer</span>
+    <span>Aspiring Developer</span>
     <h2>Jacob Luytjes</h2>
     <p>
         <a href="https://github.com/JacobLuytjes01" target="_blank" aria-label="Github (opens in a new tab)" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/jacob-luytjes" target="_blank" aria-label="Linkedin (opens in a new tab)" rel="noopener noreferrer">Linkedin</a>
         <a href="Resume/resumeJacobLuytjes.pdf" target="_blank" aria-label="Resume (opens in a new tab)" rel="noopener noreferrer">Resume</a>
-        <a id="btn" onclick="ChangeMode()">Light Mode</a>
     </p>
 </header>
 <main>
     <h2 class="title">About Me</h2>
-    <div class="large boxes">
+    <div class="large boxes rest">
         <ul>
             <li>I have enjoyed Programming since I made my first video game.</li>
             <li>Currently live in Yorkville, Illinois.</li>
@@ -179,8 +163,8 @@
         </div>
     </div>
 </main>
-<footer class="foot base">
-    <p>Aspiring Software Engineer</p>
+<footer class="base">
+    <p>Aspiring Developer</p>
     <h2>Jacob Luytjes</h2>
     <div>jacob_luytjes@comcast.net</div>
     <div>630-618-0939</div>
