@@ -6,49 +6,23 @@ body {
     color: lightgrey;
     background-image: linear-gradient(#090950, #281D4B);
 }
-.light {
-    color: black;
-    background-image: linear-gradient(whitesmoke, lightgrey);
-    header {
-        background-color: steelblue;
-    }
-    .foot {
-        background-color: cadetblue;
-        p, h2, div {
-            padding: 2px 5px;
-        }
-    }
-}
-.dark {
-    color: lightgrey;
-    background-image: linear-gradient(#090950, #281D4B);
-    header {
-        background-color: #281D4B;
-    }
-    .foot {
-        background-color: #090950;
-        p, h2, div {
-            padding: 2px 5px;
-        }
-    }
-}
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    justify-items: center;
+    justify-items: stretch;
+    text-align: center;
     align-items: center;
     align-content: center;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
+    max-width: 1920px;
 }
 header {
-    p {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    background-color: #281D4B;
 }
-.foot {
+footer {
+    background-color: #090950;
     p, h2, div {
         padding: 2px 5px;
     }
@@ -80,11 +54,13 @@ a:hover {
     display: grid;
     grid-template-columns: 9.3fr 1fr;
     justify-content: space-between;
+    text-align: left;
 }
 .rest {
     display: grid;
     grid-template-columns: 1fr;
     line-height: 1.6rem;
+    text-align: left;
 }
 .split {
     display: grid;
@@ -98,7 +74,7 @@ a:hover {
     border-radius: 10px;
 }
 @media only screen and (max-width: 900px) {
-    .foot, header {
+    footer, header {
         flex-direction: column;
         line-height: 2rem;
         p {
