@@ -72,14 +72,15 @@ a:hover {
     margin: 1rem;
     padding: 5px 10px;
     border-radius: 10px;
+    align-content: space-between;
+}
+.hobbies {
+    align-content: normal;
 }
 @media only screen and (max-width: 900px) {
     footer, header {
         flex-direction: column;
         line-height: 2rem;
-        p {
-            display: block;
-        }
     }
     .boxes {
         grid-column: span 2;
@@ -93,10 +94,7 @@ a:hover {
 }
 .view {
     grid-row: span 2;
-}
-.image {
-    width: 50%;
-    padding: 10px;
+    text-align: end;
 }
 .right {
     text-align: right;
