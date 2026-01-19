@@ -61,7 +61,7 @@ a:hover {
 .rest {
     display: grid;
     grid-template-columns: 1fr;
-    line-height: 1.6rem;
+    line-height: 1.7rem;
     text-align: left;
 }
 .split {
