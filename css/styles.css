@@ -14,7 +14,7 @@ main {
     align-content: center;
     padding: 1rem;
     margin: 1rem auto;
-    max-width: 1920px;
+    max-width: 1050px;
 }
 .indexMain {
     display: grid;
