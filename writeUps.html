@@ -4,142 +4,190 @@
     <meta charset="UTF-8">
     <title>My Write-ups</title>
     <link rel='stylesheet' href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="base">
     <span><a href="index.html" aria-label="Go to main page">Go Back to Portfolio</a></span>
     <h1>Jacob Luytjes</h1>
-    <p>
+    <nav aria-label="External links">
         <a href="https://github.com/JacobLuytjes01" target="_blank" aria-label="GitHub (opens in a new tab)" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/jacob-luytjes" target="_blank" aria-label="LinkedIn (opens in a new tab)" rel="noopener noreferrer">LinkedIn</a>
         <a href="Resume/resumeJacobLuytjes.pdf" target="_blank" aria-label="Resume (opens in a new tab)" rel="noopener noreferrer">Resume</a>
-    </p>
+    </nav>
 </header>
 <main>
-    <div class="boxes rest large">
+    <h2>My Project Write-ups</h2>
+    <article class="boxes rest large">
         <h3>StringNum</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            I had an idea for a number system because integers have a small range and lack decimal components. Then, floating point can have rounding errors and cannot represent every possible number. I wanted to use a system with near-infinite precision; however, I was unaware of BigNum systems. This was a great opportunity to build one from the ground up.<br>
-            <b>What has been made:</b><br>
-            I have currently implemented addition, subtraction, multiplication, prefix and postfix operators, all relational operators, and some helper functions.<br>
-            <b>How:</b><br>
-            I wrote the project in C++ to be fast and usable in C++ and Python. The numbers are represented internally using strings, as they have more useful features than char arrays.<br>
-            I used test-driven development to help create features and correctly implement the basic math functions. When I methodically tested my code, I always found something I wanted to fix.<br>
-            <b>What I would add next:</b><br>
-            More number systems [binary, hexadecimal], division, and compound assignment operators.<br>
-            <b>Reflection:</b><br>
-            This project was a learning experience in managing and debugging a large, interconnected codebase and determining how and where to fix whenever I encountered a bug.<br>
-            It also strengthened my understanding of operator overloading, algorithmic thinking, and designing components that work together effectively.
-        </div>
-        <br>
+        <h4>Why I built this project:</h4>
+        <p>I had an idea for a number system because integers have a small range and lack decimal components. Then, floating point can have rounding errors and cannot represent every possible number. I wanted to use a system with near-infinite precision; however, I was unaware of BigNum systems. This was a great opportunity to build one from the ground up.</p>
+        <h4>What has been made:</h4>
+        <p>I have currently implemented addition, subtraction, multiplication, prefix and postfix operators, all relational operators, and some helper functions.</p>
+        <h4>How:</h4>
+        <p>I wrote the project in C++ to be fast and usable in C++ and Python. The numbers are represented internally using strings, as they have more useful features than char arrays.
+        I used test-driven development to help create features and correctly implement the basic math functions. When I methodically tested my code, I always found something I wanted to fix.</p>
+        <h4>What I would add next:</h4>
+        <p>More number systems [binary, hexadecimal], division, and compound assignment operators.</p>
+        <h4>Reflection:</h4>
+        <p>
+        This project was a learning experience in managing and debugging a large, interconnected codebase and determining how and where to fix whenever I encountered a bug.
+        It also strengthened my understanding of operator overloading, algorithmic thinking, and designing components that work together effectively.
+        </p>
         <div>
             <a href="https://github.com/JacobLuytjes01/StringNum" target="_blank" aria-label="Goes to String Num GitHub page. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
             <span class="right2">Made with C++</span>
         </div>
-
-    </div>
+    </article>
     <br>
-    <div class="boxes rest large">
+    <article class="boxes rest large">
         <h3>Balatro Mod</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            Since I played a lot of Balatro [A fun roguelike deck builder], I wanted to make a mod for the game.<br>
-            <b>What has been made:</b><br>
-            I made 3 jokers, 2 consumables, and 1 enhancement that all have the same theme.<br>
-            <b>How:</b><br>
-            It was an interesting learning experience in trying to figure out how to create certain card effects, as the documentation was difficult to find and scattered over Discord and GitHub when I was making my mod.<br>
-            It was interesting to try programming in Lua, but it was mostly Reverse engineering undocumented behavior from the documentation on Discord and tweaking it to make it work the way I want. I had an interesting experience with one mod that was corrupting some of the features I was using, so I had to debug and figure out which mod was causing my code to fail and update it.<br>
-            It was also fun creating the art for my mod, as I learned a small amount of image editing to make some cards pop.<br>
-            <b>Reflection:</b><br>
-            This project was a very practical experience, and made me more interested in creating high-quality documentation for my future projects because of the major difficulties I was having with Steamodded.
-        </div>
+        <h4>Why I built this project:</h4>
+        <p>Since I played a lot of Balatro [a fun roguelike deck builder], I wanted to make a mod for the game.</p>
+        <h4>What has been made:</h4>
+        <p>The mod introduces three jokers, two consumables, and one enhancement that interact through a shared gameplay mechanic.</p>
+        <h4>How:</h4>
+        <p>
+            It was an interesting learning experience in trying to figure out how to create certain card effects, as the documentation was difficult to find and scattered over Discord and GitHub when I was making my mod.
+            It was interesting to try programming in Lua, but it was mostly reverse engineering undocumented behavior from the documentation on Discord and tweaking it to make it work the way I wanted.
+            I had an interesting experience with one mod that was corrupting some of the features I was using, so I had to debug and figure out which mod was causing my code to fail and update it.
+            It was also fun creating the art for my mod, as I learned a small amount of image editing to make some cards pop.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
+            This project was a very practical experience and made me more interested in creating high-quality documentation for my future projects because of the major difficulties I had with Steamodded.
+        </p>
         <div>
             <span class="right2">Made with Lua, Steamodded</span>
         </div>
-    </div>
+    </article>
     <br>
-    <div class="boxes rest large">
+    <article class="boxes rest large">
         <h3>Student Grade Calculator</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            I started this project to learn about React over the summer. Then, after learning more about React in school, I revisited this project to implement better design patterns and polish up my React knowledge.<br>
-            <b>What has been made:</b><br>
-            I developed a project that dynamically calculates the grade in Real-time. The user can add as many assignments as they want with their name, grade, and weight.<br>
-            <b>How:</b><br>
-            I used React hooks [useState] to hold the dynamic variables and pass functions down to each grade, so the values can be changed.<br>
-            The things I improved after gaining more knowledge in React: created a higher-quality mobile view, modernized the component format, and utilized higher-level JavaScript functions, like map and spread operators. I changed the UI and removed unneeded complexity and functions.<br>
-            <b>Reflection:</b><br>
-            This project helped me learn React and retain the knowledge I learned in school. Some of the knowledge it helped me remember was building simple, debuggable code and UI work on different screen sizes.
-        </div>
-        <br>
+        <h4>Why I built this project:</h4>
+        <p>
+            I started this project to learn about React over the summer. Then, after learning more about React in school, I revisited this project to implement better design patterns and polish up my React knowledge.
+        </p>
+        <h4>What has been made:</h4>
+        <p>
+            I developed a project that dynamically calculates the grade in real time. The user can add as many assignments as they want with their name, grade, and weight.
+        </p>
+        <h4>How:</h4>
+        <p>
+            I used React hooks (useState) to hold the dynamic variables and pass functions down to each grade so the values can be changed.
+            After gaining more knowledge in React, I created a higher-quality mobile view, modernized the component format, and utilized higher-level JavaScript functions like map and spread operators. I also simplified the UI and removed unnecessary complexity and functions.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
+            This project helped me learn React and retain the knowledge I learned in school. Some of the knowledge it reinforced was building simple, debuggable code and designing UI that works on different screen sizes.
+        </p>
         <div>
             <a class="view" href="https://github.com/JacobLuytjes01/student-grade-calc" target="_blank" aria-label="Goes to calculator GitHub page. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
             <span class="right2">Made with React, Vite</span>
         </div>
-    </div>
+    </article>
     <br>
-    <div class="boxes rest large">
+    <article class="boxes rest large">
         <h3>Fractional Approximation of Pi Calculator</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            I was looking for something to program. I thought about how certain fractions approximate Pi, such as 22/7 or 335/113, and how it would be interesting to create a program to find the best approximations.<br>
-            <b>What has been made:</b><br>
-            Designed a brute-force approximation engine that goes through every possible combination of fractions based upon a defined upper bound. It determines which fractions are closest to Pi, ranks them, and displays them to the user.<br>
-            <b>Main Challenge:</b><br>
-            I attempted a few strategies to prevent equivalent fractions (e.g., 44/14 and 22/7) from appearing multiple times in rankings. First, I typecast the values into integers and check if they are exact matches of the surrounding rankings using the modulo operator. However, this did not work because I wanted the user to be able to use fractional components for both numerator and denominator. Then, I checked if two numbers are extremely close together; they would not show up, but this caused issues as it would sometimes skip over non-equivalent fractions.<br>
-            Finally, I made a solution that did not slow down the program. I took the previous solution, but made the lower bounds get divided by the maximum denominator that would be checked. This solved the problem in a simple and efficient way.<br>
-            <b>Reflection:</b><br>
-            The project was useful in making a project that can be changed by end users and documenting the code.
-        </div>
-        <br>
+        <h4>Why I built this project:</h4>
+        <p>
+            I was looking for something to program and thought about how certain fractions approximate Pi, such as 22/7 or 335/113. I thought it would be interesting to create a program to find the best approximations.
+        </p>
+        <h4>What has been made:</h4>
+        <p>
+            I designed a brute-force approximation engine that goes through every possible combination of fractions based on a defined upper bound. It determines which fractions are closest to Pi, ranks them, and displays them to the user.
+        </p>
+        <h4>Main challenge:</h4>
+        <p>
+            I attempted several strategies to prevent equivalent fractions (e.g., 44/14 and 22/7) from appearing multiple times in the rankings.
+            First, I typecast values into integers and checked if they matched surrounding rankings using the modulo operator. This failed because I wanted the user to be able to use decimal components for both numerator and denominator.
+            I then checked if two numbers were extremely close together so duplicates would not appear, but this caused issues where non-equivalent fractions were sometimes skipped.
+            Finally, I created a solution that did not slow down the program. I adjusted the previous solution so the lower bounds were divided by the maximum denominator being checked. This solved the problem in a simple and efficient way.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
+            The project was useful in creating a program that can be configured by end users and properly documenting the code.
+        </p>
         <div>
             <a href="https://github.com/JacobLuytjes01/FractionsThatApproxPi" target="_blank" aria-label="Goes to GitHub page for Fractions That Approximate Pi. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
             <span class="right2">Made with C++</span>
         </div>
-    </div>
+    </article>
     <br>
-    <div class="boxes rest large">
+    <article class="boxes rest large">
         <h3>Easy Image Signature</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            When I was working on my 3D modeling projects, I often did not put my name on my work because it would take too much time. Then, to improve my work, I programmed a useful project to sign my images.<br>
-            <b>What has been made:</b><br>
-            A program that adds my name in a consistent way to either a single image or to an entire folder of images, with only one line in the CMD prompt.<br>
-            <b>How:</b><br>
-            I used FFmpeg to add text to the images and Node.js to orchestrate the surrounding data.<br>
-            <b>What I would add next:</b><br>
-            Support for WebP and other image formats, as well as video.<br>
-            <b>Reflection:</b><br>
-            It has signed 20+ images successfully. The project helped save me time, I sign my work more often, and so it is a success.
-        </div>
-        <br>
+        <h4>Why I built this project:</h4>
+        <p>
+            When working on my 3D modeling projects, I often did not put my name on my work because it took too much time. To improve this, I programmed a project to quickly sign my images.
+        </p>
+        <h4>What has been made:</h4>
+        <p>
+            A program that adds my name in a consistent way to either a single image or an entire folder of images with only one line in the command prompt.
+        </p>
+        <h4>How:</h4>
+        <p>
+            I used FFmpeg to add text to images and Node.js to orchestrate the surrounding logic and file handling.
+        </p>
+        <h4>What I would add next:</h4>
+        <p>
+            Support for WebP and other image formats, as well as video.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
+            The program has signed 20+ images successfully. The project saved time and encouraged me to sign my work more consistently.
+        </p>
         <div>
             <a href="https://github.com/JacobLuytjes01/SignatureCode" target="_blank" aria-label="Goes to GitHub page for Signature Code. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
             <span class="right2">Made with Node.js, FFmpeg</span>
         </div>
-    </div>
+    </article>
     <br>
-    <div class="boxes rest large">
+    <article class="boxes rest large">
         <h3>ASCII State Diagram Maker</h3>
-        <div>
-            <b>Why I built this project:</b><br>
-            During my software testing class, the teacher discussed  State diagrams, and I got the idea to build a simple ASCII state diagram maker to practice arrays and learn TypeScript.<br>
-            <b>What has been made:</b><br>
-            A program using ASCII to make state diagrams with boxes and arrows.<br>
-            <b>How:</b><br>
-            I first wrote a function that returns a 2D Array with ASCII boxes with a label inside it, with adjustable height and width. Next was a function to assemble the full diagram with all boxes and arrows. The system supports arrows between nearby boxes as well as arrows that route underneath boxes to represent more complex relationships. The boxes are centered when compared to each other.<br>
-            <b>What I would add next:</b><br>
-            Support for more shapes and arrows coming out from the top of the box.<br>
-            <b>Reflection:</b><br>
+        <h4>Why I built this project:</h4>
+        <p>
+            During my software testing class, the teacher discussed state diagrams, and I got the idea to build a simple ASCII state diagram maker to practice arrays and learn TypeScript.
+        </p>
+        <h4>What has been made:</h4>
+        <p>
+            A program that generates state diagrams using ASCII boxes and arrows.
+        </p>
+        <h4>How:</h4>
+        <p>
+            I first wrote a function that returns a 2D array containing ASCII boxes with labels inside them, with adjustable height and width.
+            Next, I created a function to assemble the full diagram with boxes and arrows. The system supports arrows between nearby boxes as well as arrows that route underneath boxes to represent more complex relationships. The boxes are centered relative to each other.
+        </p>
+        <h4>What I would add next:</h4>
+        <p>
+            Support for more shapes and arrows coming from the top of boxes.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
             The project was productive: learning a new language and creating something based on what we covered in class for other students.
-        </div>
-        <br>
+        </p>
         <div>
             <a href="https://github.com/JacobLuytjes01/StateDiagramMaker" target="_blank" aria-label="Goes to GitHub page for State Diagram Maker. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
             <span class="right2">Made with TypeScript</span>
         </div>
-    </div>
+    </article>
+    <br>
+    <article class="boxes rest large">
+        <h3>First Pull Request for Balatro Mod</h3>
+        <h4>Why I worked on this project:</h4>
+        <p>I began this project because two of my mods were conflicting and I wanted to be able to play with them together.</p>
+        <h4>What has been made:</h4>
+        <p>I made a small fix to one of the jokers to check if a variable exists before performing calculations with it to prevent a crash.</p>
+        <h4>How:</h4>
+        <p>I thoroughly tested what was causing the problem to make sure I could accurately replicate the problem and see that it was a wider problem than just my computer. Then I looked over the file that was mentioned in the stack trace and added a one line change to fix the crash.</p>
+        <h4>Reflection:</h4>
+        <p>
+            This project gave me experience contributing to an existing codebase and submitting a pull request to a larger repository.
+        </p>
+        <div>
+            <a href="https://github.com/the-Astra/Maximus/pull/51" target="_blank" aria-label="Goes to GitHub page for my pull request on Maximus. (opens in a new tab)" rel="noopener noreferrer">View Pull Request</a>
+            <span class="right2">Made with Lua, Steamodded</span>
+        </div>
+    </article>
 </main>
 <footer class="base">
     <div><a href="tel:16306180939">630-618-0939</a></div>
