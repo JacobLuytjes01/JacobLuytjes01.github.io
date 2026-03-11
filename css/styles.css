@@ -20,6 +20,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+div {
+    padding: 0 4px;
+}
 header {
     background-color: #281D4B;
 }
