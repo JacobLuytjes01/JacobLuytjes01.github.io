@@ -12,7 +12,6 @@ body {
     color: var(--accent-color);
     background-image: linear-gradient(var(--sec-color), var(--pri-color));
     line-height: 1.5rem;
-    text-wrap: balance;
 }
 main {
     justify-content: center;
@@ -149,4 +148,7 @@ hr {
 .face {
     border-radius: 100px;
     border: 2px solid var(--pri-color);
+}
+.skills {
+    text-wrap: balance;
 }
