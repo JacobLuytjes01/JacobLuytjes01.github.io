@@ -3,7 +3,6 @@
     --sec-color: #284050;
     --accent-color: #e6e6e6;
 }
-
 body {
     font-size: 20px;
     font-family: monospace;
@@ -125,7 +124,7 @@ ul {
     padding: 0 5px;
     list-style-position: inside;
 }
-h3, h4, p {
+h3, h4, h5, p {
     margin: .25rem;
 }
 img {
@@ -148,7 +147,11 @@ hr {
 .face {
     border-radius: 100px;
     border: 2px solid var(--pri-color);
+    margin-right: .5rem;
 }
 .skills {
     text-wrap: balance;
+}
+h5 {
+    font-size: 1.15rem;
 }

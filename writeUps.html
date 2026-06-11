@@ -79,7 +79,7 @@
         </p>
         <h4>Reflection:</h4>
         <p>
-            This project helped me learn React and retain the knowledge I learned in school. Some of the knowledge it reinforced was building simple, debuggable code and designing UI that works on different screen sizes.
+            This project helped me learn React and retain the knowledge I learned in school. Some of the knowledge it reinforced was building simple, debuggable code and designing a UI that works on different screen sizes.
         </p>
         <div>
             <a class="view" href="https://github.com/JacobLuytjes01/student-grade-calc" target="_blank" aria-label="Goes to calculator GitHub page. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
@@ -100,7 +100,7 @@
         <h4>Main challenge:</h4>
         <p>
             I attempted several strategies to prevent equivalent fractions (e.g., 44/14 and 22/7) from appearing multiple times in the rankings.
-            First, I typecast values into integers and checked whether they matched surrounding rankings using the modulo operator. This failed because I wanted the user to be able to use decimal components in both the numerator and denominator.
+            First, I typecast values into integers and checked whether they matched the surrounding rankings using the modulo operator. This failed because I wanted the user to be able to use decimal components in both the numerator and denominator.
             I then checked whether two numbers were extremely close together to fix it, but this caused issues as non-equivalent fractions were sometimes skipped.
             Finally, I created a solution that did not slow down the program. I adjusted the previous solution so the lower bounds were divided by the maximum denominator. This solved the problem in a simple and efficient way.
         </p>
@@ -134,11 +134,11 @@
         </p>
         <h4>Reflection:</h4>
         <p>
-            The program has signed 40+ images. The project saved time and encouraged me to sign my work more consistently.
+            The program has signed 50+ images. The project saved time and encouraged me to sign my work more consistently.
         </p>
         <div>
             <a href="https://github.com/JacobLuytjes01/SignatureCode" target="_blank" aria-label="Goes to GitHub page for Signature Code. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
-            <span class="right2">Made with Node.js, FFmpeg</span>
+            <span class="right2">Made with JavaScript, Node.js, FFmpeg</span>
         </div>
     </article>
     <br>
@@ -197,7 +197,7 @@
         <p>We built an offline-first electronic medical record (EMR) system designed for clinics with no internet access. It has an inventory system, a priority waiting queue, and some medical forms.</p>
         <h4>How:</h4>
         <p> We used React Native, Nativewind, and SQLite with a 3-person team.
-            I contributed to everything, but mostly the inventory manager, database implementation, and input forms.
+            I contributed to everything, but mostly to the inventory manager, database implementation, and input forms.
         </p>
         <h4>Reflection:</h4>
         <p>
@@ -205,8 +205,65 @@
         </p>
         <div>
             <a href="https://github.com/La-Tortuga-Foundation/la-tortuga-emr-capstone/tree/dev" target="_blank" aria-label="Goes to GitHub page for La Tortuga Foundation EMR. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
-            <span class="right2">Made with React Native, Nativewind, TypeScript, Expo</span>
+            <span class="right2">Made with React Native, Nativewind, TypeScript, SQLite, Expo</span>
         </div>
+    </article>
+    <br>
+    <article class="boxes rest large">
+        <h3>Morrowind Potion Helper</h3>
+        <h4>Why I worked on this project:</h4>
+        <p>I began building this to create a formal web app that required non-trivial data processing.</p>
+        <h4>What has been made:</h4>
+        <p>I built a web app that allows users to input which potion effects they want,
+            and they get back what ingredients would be best to create the potion.
+            The web app is fully server-rendered, so it works even if JavaScript is disabled.
+        </p>
+        <h4>How:</h4>
+        <p>I used the Express Framework with an MVC architecture and a REST backend. I rendered the pages using Handlebars templates and stored the data using a JSON file.
+        </p>
+        <h4>Reflection:</h4>
+        <p>This project helped me review some of the practices and tools I learned in school.</p>
+        <div>
+            <a href="https://github.com/JacobLuytjes01/Morrowind-Potion-Helper-Express" target="_blank" aria-label="Goes to GitHub page for Morrowind Potion Helper in Express. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
+            <span class="right2">Made with JavaScript, Node.js, Express, HandleBars, JSON, HTML, CSS</span>
+        </div>
+    </article>
+    <br>
+    <article class="boxes rest large">
+        <h3>Converting Morrowind Potion Helper to Go</h3>
+        <h4>Why I worked on this project:</h4>
+        <p>I wanted to learn Go and practice using Go on a large system to learn the parts faster.</p>
+        <h4>What has been made:</h4>
+        <p>I converted the app to Go with all the features it had in the Express version.</p>
+        <h4>How:</h4>
+        <p>I used Go and Go's templating engine.</p>
+        <h4>Reflection:</h4>
+        <p>This project helped me learn Go and see the differences between the two frameworks' approaches to the same task. It was interesting to see the more explicit error handling in Go as compared to my Express backend.</p>
+        <div>
+            <a href="https://github.com/JacobLuytjes01/Morrowind-Potion-Helper-Go" target="_blank" aria-label="Goes to GitHub page for Morrowind Potion Helper in Go. (opens in a new tab)" rel="noopener noreferrer">View Code</a>
+            <span class="right2">Made with Go, JSON, HTML, CSS</span>
+        </div>
+    </article>
+    <br>
+    <article class="boxes rest large">
+        <h3>Updating some of my older projects</h3>
+        <h4>Why I worked on this project:</h4>
+        <p>To increase the quality of code in my repos and to give users more features and a better experience.</p>
+        <h4>What has been made:</h4>
+        <h5>Overall:</h5>
+        <p>I added more README.md files to allow more people to understand my code and give instructions on how to use the code.</p>
+        <h5>Student Grade Calculator:</h5>
+        <p>I added dark mode. I gave the user more options, like whether the grade weight should be based on 100 or only on current assignments. Finally, I put the website into a CI/CD pipeline to allow more people to use the website and learn CI/CD.</p>
+        <h5>Image Converter:</h5>
+        <p>I added this to GitHub to allow others to mass-change file types in an easy way.</p>
+        <h5>Easy Image Signature:</h5>
+        <p>I made the program asynchronous to speed it up. I added better error messages. Then I made the settings easily editable.</p>
+        <h5>ASCII State Diagram Maker:</h5>
+        <p>Allowed the code to be usable as a library and separated test code from the main file.</p>
+        <h5>Python Web Scraping Code:</h5>
+        <p>Added the code I used to build the JSON data that the Morrowind Potion Helper uses.</p>
+        <h4>Reflection:</h4>
+        <p>This helped me retain my knowledge and see where I have improved as a programmer.</p>
     </article>
 </main>
 <footer class="base">
