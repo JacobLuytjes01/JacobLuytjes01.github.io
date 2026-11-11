@@ -9,7 +9,7 @@
 <body>
 <header class="base">
     <span><a href="index.html" aria-label="Go to main page">Go Back to Portfolio</a></span>
-    <h1>Jacob Luytjes</h1>
+    <h1 class="mid">Jacob Luytjes</h1>
     <nav aria-label="External links">
         <a href="https://github.com/JacobLuytjes01" target="_blank" aria-label="GitHub (opens in a new tab)" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/jacob-luytjes" target="_blank" aria-label="LinkedIn (opens in a new tab)" rel="noopener noreferrer">LinkedIn</a>
@@ -18,7 +18,24 @@
 </header>
 <main>
     <h2>My Project Write-ups</h2>
-    <article class="boxes rest large">
+    <nav class="boxes">
+	    <h2>Table of Contents</h2>
+	    <ul class="grid toc">
+		    <li><a href="#StringNum">StringNum</a></li>
+		    <li><a href="#Balatro">Balatro Mod</a></li>
+		    <li><a href="#StudentGradeCalculator">Student Grade Calculator</a></li>
+		    <li><a href="#FractionalPi">Fractional Approximation of Pi Calculator</a></li>
+		    <li><a href="#EasyImageSignature">Easy Image Signature</a></li>
+		    <li><a href="#ASCIIStateDiagram">ASCII State Diagram Maker</a></li>
+		    <li><a href="#FirstPullRequest">My First Pull Request for Balatro Mod</a></li>
+		    <li><a href="#LaTortugaEMR">La Tortuga Foundation EMR / Capstone Project</a></li>
+		    <li><a href="#MorrowindPotionHelper">Morrowind Potion Helper</a></li>
+		    <li><a href="#MorrowindGo">Converting Morrowind Potion Helper to Go</a></li>
+		    <li><a href="#OlderProjects">Updating some of my older projects</a></li>
+            <li><a href="#ai1">Using AI in development</a></li>
+	    </ul>
+    </nav>
+    <article id="StringNum" class="boxes rest large">
         <h3>StringNum</h3>
         <h4>Why I built this project:</h4>
         <p>I had an idea for a number system because integers have a small range and lack decimal components. Then, floating point can have rounding errors and cannot represent every possible number. I wanted to use a system with near-infinite precision; however, I was unaware of BigNum systems. This was a great opportunity to build one from the ground up.</p>
@@ -40,7 +57,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="Balatro" class="boxes rest large">
         <h3>Balatro Mod</h3>
         <h4>Why I built this project:</h4>
         <p>Since I played a lot of Balatro, I wanted to make a mod for the game.</p>
@@ -62,7 +79,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="StudentGradeCalculator" class="boxes rest large">
         <h3>Student Grade Calculator</h3>
         <h4>Why I built this project:</h4>
         <p>
@@ -87,7 +104,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="FractionalPi" class="boxes rest large">
         <h3>Fractional Approximation of Pi Calculator</h3>
         <h4>Why I built this project:</h4>
         <p>
@@ -114,7 +131,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="EasyImageSignature" class="boxes rest large">
         <h3>Easy Image Signature</h3>
         <h4>Why I built this project:</h4>
         <p>
@@ -142,7 +159,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="ASCIIStateDiagram" class="boxes rest large">
         <h3>ASCII State Diagram Maker</h3>
         <h4>Why I built this project:</h4>
         <p>
@@ -171,7 +188,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="FirstPullRequest" class="boxes rest large">
         <h3>My First Pull Request for Balatro Mod</h3>
         <h4>Why I worked on this project:</h4>
         <p>I began this project because two of my mods were conflicting, and I wanted to be able to play with them together.</p>
@@ -189,7 +206,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="LaTortugaEMR" class="boxes rest large">
         <h3>La Tortuga Foundation EMR / Capstone Project</h3>
         <h4>Why I worked on this project:</h4>
         <p>I began this project as my capstone, became interested in the foundation, and now I want to help them by continuing to develop their EMR.</p>
@@ -209,7 +226,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="MorrowindPotionHelper" class="boxes rest large">
         <h3>Morrowind Potion Helper</h3>
         <h4>Why I worked on this project:</h4>
         <p>I began building this to create a formal web app that required non-trivial data processing.</p>
@@ -229,7 +246,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="MorrowindGo" class="boxes rest large">
         <h3>Converting Morrowind Potion Helper to Go</h3>
         <h4>Why I worked on this project:</h4>
         <p>I wanted to learn Go and practice using Go on a large system to learn the parts faster.</p>
@@ -245,7 +262,7 @@
         </div>
     </article>
     <br>
-    <article class="boxes rest large">
+    <article id="OlderProjects" class="boxes rest large">
         <h3>Updating some of my older projects</h3>
         <h4>Why I worked on this project:</h4>
         <p>To increase the quality of code in my repos and to give users more features and a better experience.</p>
@@ -261,14 +278,30 @@
         <h5>ASCII State Diagram Maker:</h5>
         <p>Allowed the code to be usable as a library and separated test code from the main file.</p>
         <h5>Python Web Scraping Code:</h5>
-        <p>Added the code I used to build the JSON data that the Morrowind Potion Helper uses.</p>
+        <p>Added the code that build the JSON data the Morrowind Potion Helper uses to GitHub.</p>
         <h4>Reflection:</h4>
         <p>This helped me retain my knowledge and see where I have improved as a programmer.</p>
+    </article>
+    <br>
+    <article id="ai1" class="boxes rest large">
+        <h3>Using AI in development</h3>
+        <h4>Why I worked on this:</h4>
+        <p>
+            I am using AI to review my projects to improve them with human input and to better understand AI assisted development.
+        </p>
+        <h4>What has been made:</h4>
+        <p>
+            I improved all versions of the Morrowind Potion Helper as well as making a python port. I used to make simple phones svg that I improved upon. Then I used them to review and improve this portfolio.
+        </p>
+        <h4>Reflection:</h4>
+        <p>
+            This project helped me see how AI assisted development can be useful in either fully making the features. It also let me see where AIs can struggle and why I should always check their UI implementations. I would likely have AIs take pictures of the before and after to make sure there work is right in PRs.
+        </p>
     </article>
 </main>
 <footer class="base">
     <div><a href="tel:16306180939">630-618-0939</a></div>
-    <div><a href="mailto:jacob_luytjes@comcast.net">jacob_luytjes@comcast.net</a></div>
+    <div class="mid"><a href="mailto:jacob_luytjes@comcast.net">jacob_luytjes@comcast.net</a></div>
     <span><a href="index.html" aria-label="Go to main page">Go Back to Portfolio</a></span>
 </footer>
 </body>
